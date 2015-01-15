@@ -14,6 +14,7 @@
 		2CE576E81A53C32400755820 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE576E71A53C32400755820 /* Images.xcassets */; };
 		2CE576EB1A53C32400755820 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE576E91A53C32400755820 /* LaunchScreen.xib */; };
 		2CE576F71A53C32400755820 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE576F61A53C32400755820 /* HelloWorldTests.swift */; };
+		2CE577051A53E33500755820 /* ActOnControlEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE577041A53E33500755820 /* ActOnControlEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2CE576F01A53C32400755820 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE576F51A53C32400755820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CE576F61A53C32400755820 /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
+		2CE577041A53E33500755820 /* ActOnControlEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActOnControlEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBC7C441A677F3F00BE1A82 /* Engine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBC7C441A677F3F00BE1A82 /* Engine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,7 @@
 				2CE576E71A53C32400755820 /* Images.xcassets */,
 				2CE576E91A53C32400755820 /* LaunchScreen.xib */,
 				2CE576DE1A53C32400755820 /* Supporting Files */,
+				2CE577041A53E33500755820 /* ActOnControlEvents.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE577051A53E33500755820 /* ActOnControlEvents.swift in Sources */,
 				2CE576E31A53C32400755820 /* ViewController.swift in Sources */,
 				2CE576E11A53C32400755820 /* AppDelegate.swift in Sources */,
 			);
