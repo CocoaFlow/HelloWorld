@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CBC7C441A677F3F00BE1A82 /* Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBC7C431A677F3F00BE1A82 /* Engine.framework */; };
+		2CD7153F1A53E66E004C783E /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7153E1A53E66E004C783E /* PresentViewController.swift */; };
 		2CE576E11A53C32400755820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE576E01A53C32400755820 /* AppDelegate.swift */; };
 		2CE576E31A53C32400755820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE576E21A53C32400755820 /* ViewController.swift */; };
 		2CE576E61A53C32400755820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE576E41A53C32400755820 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2CBC7C431A677F3F00BE1A82 /* Engine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Engine.framework; path = "Carthage/Checkouts/Engine/build/Debug-iphoneos/Engine.framework"; sourceTree = "<group>"; };
+		2CD7153E1A53E66E004C783E /* PresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		2CE576DB1A53C32400755820 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE576DF1A53C32400755820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CE576E01A53C32400755820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				2CE576E91A53C32400755820 /* LaunchScreen.xib */,
 				2CE576DE1A53C32400755820 /* Supporting Files */,
 				2CE577041A53E33500755820 /* ActOnControlEvents.swift */,
+				2CD7153E1A53E66E004C783E /* PresentViewController.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				2CE577051A53E33500755820 /* ActOnControlEvents.swift in Sources */,
 				2CE576E31A53C32400755820 /* ViewController.swift in Sources */,
+				2CD7153F1A53E66E004C783E /* PresentViewController.swift in Sources */,
 				2CE576E11A53C32400755820 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
