@@ -5,5 +5,5 @@ An iOS app demonstrating flow-based programming using CocoaFlow.
 ## Installing dependencies
 
 ```sh
-$ carthage bootstrap --no-build
+$ carthage update --no-build --no-use-binaries --use-submodules
 ```
