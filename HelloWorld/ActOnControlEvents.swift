@@ -9,11 +9,11 @@
 import UIKit
 import Engine
 
-final public class ActOnControlEvents: NSObject, Engine.Component {
+final public class ActOnControlEvents: Component {
     
     public let network: Network
     
-    public init(_ network: Network) {
+    init(_ network: Network) {
         self.network = network
     }
     
@@ -27,7 +27,7 @@ final public class ActOnControlEvents: NSObject, Engine.Component {
         control.addTarget(self, action: "sendAction:", forControlEvents: events)
     }
     
-    internal func sendAction(sender: UIControl!) {
+    @objc internal func sendAction(sender: UIControl!) {
         network.send(actionPort, ())
     }
     

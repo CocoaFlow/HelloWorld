@@ -9,15 +9,15 @@
 import UIKit
 import Engine
 
-final public class PresentViewController: Engine.Component {
+final public class PresentViewController: Component {
     
     public let network: Network
     
-    public init(_ network: Network) {
+    init(_ network: Network) {
         self.network = network
     }
     
-
+    
     // Mark: - Presenting
     
     private var presentingViewController: UIViewController?
@@ -26,21 +26,14 @@ final public class PresentViewController: Engine.Component {
     private var present: Void?
     
     private func attemptToPresent() {
-        if let present: Void = self.present {
-            if let presentingViewController = self.presentingViewController {
-                if let viewControllerToPresent = self.viewControllerToPresent {
-                    if let animated = self.animated {
-                        self.present(presentingViewController, viewControllerToPresent, animated)
-                    }
+        if let _ = self.present,
+            presentingViewController = self.presentingViewController,
+            viewControllerToPresent = self.viewControllerToPresent,
+            animated = self.animated {
+                presentingViewController.presentViewController(viewControllerToPresent, animated: animated) {
+                    self.network.send(self.completionPort, ())
                 }
             }
-        }
-    }
-    
-    private func present(presentingViewController: UIViewController, _ viewControllerToPresent: UIViewController, _ animated: Bool) {
-        presentingViewController.presentViewController(viewControllerToPresent, animated: animated) {
-            self.network.send(self.completionPort, ())
-        }
     }
     
     
