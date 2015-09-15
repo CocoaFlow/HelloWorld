@@ -1,6 +1,6 @@
 # Hello World
 
-An iOS app demonstrating flow-based programming using CocoaFlow.
+An iOS app demonstrating Flow-Based Programming using CocoaFlow.
 
 ## Installing dependencies
 
