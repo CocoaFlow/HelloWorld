@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/Engine"]
+	path = Carthage/Checkouts/Engine
+	url = https://github.com/CocoaFlow/Engine.git
