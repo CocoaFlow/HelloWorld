@@ -24,10 +24,12 @@ class ViewController: UIViewController {
         
         // Mark: - Button
         
-        let button = UIButton.buttonWithType(.Custom) as UIButton
-        button.frame = CGRectMake(50, 50, 100, 50)
+        let button = UIButton(type: .Custom)
         button.backgroundColor = UIColor.grayColor()
+        button.contentEdgeInsets = UIEdgeInsetsMake(20, 20, 20, 20)
         button.setTitle("Tap Me", forState: .Normal)
+        button.sizeToFit()
+        button.center = self.view.center
         self.view.addSubview(button)
 
         
