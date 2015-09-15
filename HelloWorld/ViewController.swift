@@ -16,10 +16,10 @@ class ViewController: UIViewController {
 
         let network = Network()
         
-        let actOnControlEvents = ActOnControlEvents(network)
-        let presentViewController = PresentViewController(network)
+        let actor = ActOnControlEvents(network)
+        let presenter = PresentViewController(network)
         
-        network.addEdge(actOnControlEvents.actionPort, presentViewController.presentPort)
+        network.addConnection(actor.actionPort, presenter.presentPort)
         
         
         // Mark: - Button
@@ -40,12 +40,12 @@ class ViewController: UIViewController {
         
         // Mark: - IIPs
         
-        actOnControlEvents.controlPort.receive(button)
-        actOnControlEvents.eventsPort.receive(.TouchUpInside)
+        actor.controlPort.receive(button)
+        actor.eventsPort.receive(.TouchUpInside)
         
-        presentViewController.presentingViewControllerPort.receive(self)
-        presentViewController.viewControllerToPresentPort.receive(alertController)
-        presentViewController.animatedPort.receive(true)
+        presenter.presentingViewControllerPort.receive(self)
+        presenter.viewControllerToPresentPort.receive(alertController)
+        presenter.animatedPort.receive(true)
     }
 
     override func didReceiveMemoryWarning() {
